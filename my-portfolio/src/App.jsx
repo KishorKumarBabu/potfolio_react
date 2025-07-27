@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div className="w-screen min-h-screen bg-gray-50 text-gray-800 font-sans overflow-x-hidden">
       {/* Header */}
-      <header className="bg-white shadow-md sticky top-0 z-50 w-full">
+      <header className="bg-white shadow-xl fixed top-0 left-0 w-full z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <motion.h1 className="text-xl font-bold" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             Kishor Kumar
@@ -32,7 +32,7 @@ const App = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 bg-indigo-600 text-white text-center w-full">
+      <section className="py-20 bg-gray-100 text-center w-full">
         <motion.img
           src="/profile.jpg"
           alt="Profile"
