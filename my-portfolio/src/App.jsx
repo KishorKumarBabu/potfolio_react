@@ -164,6 +164,16 @@ const App = () => {
       <section id="experience" className="py-16 max-w-5xl mx-auto px-4">
         <motion.h2 className="text-2xl font-bold mb-6" initial={{ x: -50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>Internship Experience</motion.h2>
         <motion.div className="bg-white p-6 rounded-xl shadow-md" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
+          <h3 className="text-lg font-semibold">Frontend Development Intern -  CodeAlpha</h3>
+          <p className="text-sm mt-2 text-gray-700">1st April 2025 - 30th April 2025</p>
+          <ul className="list-disc pl-5 mt-2 text-sm">
+            <li>🖼️ Image Gallery – Built a responsive image gallery using HTML, CSS, and JavaScript with modal view and interactive navigation.</li>
+            <li>🧮 Calculator App – Developed a web-based calculator for basic arithmetic operations using HTML, CSS, and JavaScript.</li>
+            <li>🎵 Music Player – Created a custom music player with play, pause, and next features using HTML, CSS, and JavaScript.</li>
+          </ul>
+        </motion.div>
+        <motion.h2 className="text-2xl font-bold mb-6" initial={{ x: -50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>Internship Experience</motion.h2>
+        <motion.div className="bg-white p-6 rounded-xl shadow-md" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
           <h3 className="text-lg font-semibold">Python Intern -  ProcessDrive Pvt. Ltd,</h3>
           <p className="text-sm mt-2 text-gray-700">July 2024 - July 2024 (15 Days)</p>
           <ul className="list-disc pl-5 mt-2 text-sm">
