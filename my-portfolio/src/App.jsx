@@ -4,11 +4,11 @@ import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const tools = [
-  "Javascript (ES6+)", "HTML5", "CSS3", "Git", "Github", "Python", "Postman Tool"
+  "Javascript (ES6+)", "HTML5", "CSS3", "Git", "Github", "Java", "Postman Tool"
 ];
 
 const frameworks = [
-  "React JS", "Redux", "React Router","MongoDB", "Bootstrap","Tailwind CSS"
+  "React JS", "Redux", "React Router","SQL Server", "PgAdmin", "Bootstrap","Tailwind CSS"
 ];
 
 
@@ -163,22 +163,31 @@ const App = () => {
       {/* Experience */}
       <section id="experience" className="py-16 max-w-5xl mx-auto px-4">
         <motion.h2 className="text-2xl font-bold mb-6" initial={{ x: -50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>Internship Experience</motion.h2>
-        <motion.div className="bg-white p-6 rounded-xl shadow-md" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
+        <motion.div className="bg-white p-6 rounded-xl shadow-md mb-5" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
+          <h3 className="text-lg font-semibold">Software Developer Intern - Agaram Technologies</h3>
+          <p className="text-sm mt-2 text-gray-700">Sep 2025 – Present</p>
+          <ul className="list-disc pl-5 mt-2 text-sm">
+            <li> Developed a full-stack Employee Management Application using React.js, Java (Spring Boot), Tailwind CSS, and SQL Server, delivering a modern and efficient user experience.</li>
+            <li>Built and integrated RESTful APIs to enable smooth employee CRUD operations and seamless frontend–backend communication.</li>
+            <li>Deployed the application on Apache Tomcat, handling WAR packaging, server configuration, and production testing.</li>
+          </ul>
+        </motion.div>
+        <motion.div className="bg-white p-6 rounded-xl shadow-md mb-5" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
           <h3 className="text-lg font-semibold">Frontend Development Intern -  CodeAlpha</h3>
           <p className="text-sm mt-2 text-gray-700">1st April 2025 - 30th April 2025</p>
           <ul className="list-disc pl-5 mt-2 text-sm">
-            <li>🖼️ Image Gallery – Built a responsive image gallery using HTML, CSS, and JavaScript with modal view and interactive navigation.</li>
-            <li>🧮 Calculator App – Developed a web-based calculator for basic arithmetic operations using HTML, CSS, and JavaScript.</li>
-            <li>🎵 Music Player – Created a custom music player with play, pause, and next features using HTML, CSS, and JavaScript.</li>
+            <li>Image Gallery – Built a responsive image gallery using HTML, CSS, and JavaScript with modal view and interactive navigation.</li>
+            <li>Calculator App – Developed a web-based calculator for basic arithmetic operations using HTML, CSS, and JavaScript.</li>
+            <li>Music Player – Created a custom music player with play, pause, and next features using HTML, CSS, and JavaScript.</li>
           </ul>
         </motion.div>
         <motion.div className="bg-white p-6 rounded-xl shadow-md" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
           <h3 className="text-lg font-semibold">Python Intern -  ProcessDrive Pvt. Ltd,</h3>
           <p className="text-sm mt-2 text-gray-700">July 2024 - July 2024 (15 Days)</p>
           <ul className="list-disc pl-5 mt-2 text-sm">
-            <li>🔗 Worked on real-time API integration using Postman and Python, including external service calls and response handling for projects like image-to-text conversion using the Gemini API.</li>
-            <li>🗃️ Hands-on experience with MongoDB, performing CRUD operations and integrating it seamlessly into Python-based applications for dynamic data management.</li>
-            <li>🛠️ Built multiple mini-projects, including a video-to-image frame extractor and a fun chat application, applying core programming concepts in real-world use cases.</li>
+            <li>Worked on real-time API integration using Postman and Python, including external service calls and response handling for projects like image-to-text conversion using the Gemini API.</li>
+            <li>Hands-on experience with MongoDB, performing CRUD operations and integrating it seamlessly into Python-based applications for dynamic data management.</li>
+            <li>Built multiple mini-projects, including a video-to-image frame extractor and a fun chat application, applying core programming concepts in real-world use cases.</li>
           </ul>
         </motion.div>
       </section>
