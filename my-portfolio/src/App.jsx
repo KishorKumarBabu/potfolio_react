@@ -197,7 +197,7 @@ export default function App() {
         transition={{ delay: 0.5 }}
       >
        <a
-  href="./public/resume.pdf"
+  href="/resume.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="bg-white text-black px-8 py-4 font-semibold hover:bg-gray-200 transition"
@@ -312,19 +312,32 @@ export default function App() {
       </section>
 
       {/* ================= GITHUB STATS ================= */}
-      <section className="py-20 text-center">
-        <h2 className="text-3xl font-bold mb-8">GitHub Stats</h2>
-        <div className="flex flex-col md:flex-row justify-center gap-6">
-          <img
-            src="https://github-readme-stats.vercel.app/api?username=KishorKumarBabu&show_icons=true&theme=tokyonight"
-            className="rounded-xl"
-          />
-          <img
-            src="https://github-readme-streak-stats.herokuapp.com/?user=KishorKumarBabu&theme=tokyonight"
-            className="rounded-xl"
-          />
-        </div>
-      </section>
+   <section className="py-20 text-center">
+  <h2 className="text-3xl font-bold mb-8">GitHub Stats</h2>
+
+  <div className="flex flex-col md:flex-row justify-center gap-6">
+    <img
+      loading="lazy"
+      src="https://github-readme-stats.vercel.app/api?username=KishorKumarBabu&show_icons=true&theme=tokyonight"
+      alt="GitHub stats"
+      className="rounded-xl"
+      onError={(e) => {
+        e.currentTarget.src = "/github-fallback.png";
+      }}
+    />
+
+    <img
+      loading="lazy"
+      src="https://streak-stats.demolab.com?user=KishorKumarBabu&theme=tokyonight"
+      alt="GitHub streak"
+      className="rounded-xl"
+      onError={(e) => {
+        e.currentTarget.src = "/github-fallback.png";
+      }}
+    />
+  </div>
+</section>
+
 
       {/* ================= EXPERIENCE ================= */}
       <section id="experience" className="py-20 bg-white/5">
