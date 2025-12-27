@@ -166,7 +166,7 @@ export default function App() {
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
       >
-        Frontend Developer
+        Software Developer
       </motion.p>
 
       <motion.h2
