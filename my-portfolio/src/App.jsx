@@ -312,31 +312,23 @@ export default function App() {
       </section>
 
       {/* ================= GITHUB STATS ================= */}
-   <section className="py-20 text-center">
-  <h2 className="text-3xl font-bold mb-8">GitHub Stats</h2>
+<section className="py-20 text-center">
+  <h2 className="text-3xl font-bold mb-6">GitHub</h2>
 
-  <div className="flex flex-col md:flex-row justify-center gap-6">
-    <img
-      loading="lazy"
-      src="https://github-readme-stats.vercel.app/api?username=KishorKumarBabu&show_icons=true&theme=tokyonight"
-      alt="GitHub stats"
-      className="rounded-xl"
-      onError={(e) => {
-        e.currentTarget.src = "/github-fallback.png";
-      }}
-    />
+  <p className="text-gray-400 mb-6">
+    Explore my open-source work, projects, and activity on GitHub.
+  </p>
 
-    <img
-      loading="lazy"
-      src="https://streak-stats.demolab.com?user=KishorKumarBabu&theme=tokyonight"
-      alt="GitHub streak"
-      className="rounded-xl"
-      onError={(e) => {
-        e.currentTarget.src = "/github-fallback.png";
-      }}
-    />
-  </div>
+  <a
+    href="https://github.com/KishorKumarBabu"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block px-6 py-3 border border-white/20 rounded-xl hover:border-indigo-400 transition"
+  >
+    Visit GitHub Profile →
+  </a>
 </section>
+
 
 
       {/* ================= EXPERIENCE ================= */}
